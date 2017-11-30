@@ -5,6 +5,8 @@ class CreateSongs < ActiveRecord::Migration[5.1]
       t.float :duration
       t.string :genre
 
+      t.belongs_to :artist
+
       t.timestamps
     end
   end
