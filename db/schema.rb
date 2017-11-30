@@ -35,8 +35,10 @@ ActiveRecord::Schema.define(version: 20171129230106) do
     t.string "name"
     t.float "duration"
     t.string "genre"
+    t.bigint "artist_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["artist_id"], name: "index_songs_on_artist_id"
   end
 
 end
