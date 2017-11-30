@@ -1,6 +1,10 @@
-<h1>Songs</h1>
-<ol>
-  <% @songs.each do |song| %>
-    <li><b><%= song.artist.name %>:</b> <%= song.name %></li>
-  <% end %>
-</ol>
+<h1 class="ui header center aligned">Songs</h1>
+<div class="ui grid">
+  <!-- <div class="ui sixteen column center aligned grid"> -->
+    <ol>
+      <% @songs.each do |song| %>
+        <li><b><%= song.artist.name %>:</b> <%= song.name %></li>
+      <% end %>
+    </ol>
+  <!-- </div> -->
+</div>
