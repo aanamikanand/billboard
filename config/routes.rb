@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 	# 	resources :songs
 	# end
 
-  resources :artist do
+  resources :artists do
     resources :songs
   end
 end
