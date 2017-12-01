@@ -1,10 +1,8 @@
-<h1 class="ui header center aligned">Songs</h1>
+<h1 class="ui header center aligned"><%= @artist_name %> Songs</h1>
 <div class="ui grid">
   <!-- <div class="ui sixteen column center aligned grid"> -->
-    <ol>
-      <% @songs.each do |song| %>
-        <li><b><%= song.artist.name %>:</b> <%= song.name %></li>
-      <% end %>
-    </ol>
+  <% @artist_songs.each do |song| %>
+    <p><%= song.name %></p>
+  <% end %>
   <!-- </div> -->
 </div>
